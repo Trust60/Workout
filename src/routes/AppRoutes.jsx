@@ -6,17 +6,26 @@ import { useAuth } from '../hooks/useAuth'
 import { routes } from './routes.data'
 
 const AppRoutes = () => {
+	const { isAuth } = useAuth()
 	return (
 		<BrowserRouter>
 			<Routes>
-				{routes.map(route => (
-					<Route
-						key={route.path}
-						path={route.path}
-						component={route.component}
-						element={<route.component />}
-					/>
-				))}
+				{routes.map(route => {
+					if (route.isAuth && !isAuth) {
+						return false
+					}
+					{
+						return (
+							<Route
+								key={route.path}
+								path={route.path}
+								component={route.component}
+								element={<route.component />}
+							/>
+						)
+					}
+				})}
+
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</BrowserRouter>
