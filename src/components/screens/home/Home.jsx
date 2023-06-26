@@ -14,7 +14,7 @@ function Home() {
 			<Button clickHandler={() => navigate(isAuth ? '/new-workout' : '/auth')}>
 				{isAuth ? 'New' : 'Sign in'}
 			</Button>
-			<h1 className={styles.heading}>EXERCISES FRO THE SHOULDERS</h1>
+			<h1 className={styles.heading}>EXERCISES FOR THE SHOULDERS</h1>
 		</Layout>
 	)
 }

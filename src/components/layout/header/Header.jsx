@@ -25,7 +25,7 @@ const Header = ({ backLink = '/' }) => {
 			) : (
 				<button
 					onClick={() => {
-						navigate('/profile')
+						navigate(isAuth ? '/profile' : '/auth')
 					}}
 				>
 					<CgUser />
