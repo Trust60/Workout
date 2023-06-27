@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../../hooks/useAuth'
 import Layout from '../../layout/Layout'
 import Button from '../../ui/button/Button'
+import Statistics from '../profile/statistics/Statistics'
 
 import styles from './Home.module.scss'
 
@@ -15,6 +16,7 @@ function Home() {
 				{isAuth ? 'New' : 'Sign in'}
 			</Button>
 			<h1 className={styles.heading}>EXERCISES FOR THE SHOULDERS</h1>
+			<Statistics />
 		</Layout>
 	)
 }
