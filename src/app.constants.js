@@ -1,1 +1,1 @@
-export const TOKEN = 'wr-app'
+export const TOKEN = 'red'

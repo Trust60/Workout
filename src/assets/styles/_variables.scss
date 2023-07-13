@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
-$accent: #b53471;
-$white: #f1e8e8;
-$black: #1a0612;
-$hard-dark-accent: darken($accent, 30%);
-$dark-accent: darken($accent, 18%);
-
-/* https://dribbble.com/shots/17358553-Sportly-Running-Record-Stats-Activity-Log-and-Challenge */
+$accent: #4db6ac;
+$white: #f5f5f5;
+$black: #333333;
+$dark-accent: #388e85;
+$hard-dark-accent: #1c6b62;
 
 $bx-accent: 0 4px 4px rgba($accent, 0.25);
 $bx-16: 0 3px 6px rgba(0, 0, 0, 0.16);

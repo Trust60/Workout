@@ -10,11 +10,14 @@
 		outline: none;
 		cursor: pointer;
 	}
+
 	> button {
 		font-size: 30px;
 
-		> svg > path {
-			fill: #fff;
+		> svg {
+			> path {
+				fill: #fff;
+			}
 		}
 	}
 

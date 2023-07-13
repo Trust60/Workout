@@ -1,10 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom'
-
 import cn from 'clsx'
 import Cookies from 'js-cookie'
+import { Link, useNavigate } from 'react-router-dom'
+
+import { useAuth } from '../../../hooks/useAuth'
 
 import { TOKEN } from '../../../app.constants'
-import { useAuth } from '../../../hooks/useAuth'
 
 import styles from './Hamburger.module.scss'
 import { menu } from './menu.data'
@@ -19,7 +19,7 @@ const Menu = ({ isShow, setIsShow }) => {
 		setIsAuth(false)
 		setIsShow(false)
 
-		navigate('/')
+		navigate('/auth')
 	}
 
 	return (

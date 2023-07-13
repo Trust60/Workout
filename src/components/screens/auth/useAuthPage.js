@@ -1,10 +1,10 @@
+import { useMutation } from '@tanstack/react-query'
 import { useEffect, useMemo, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 
-import { useMutation } from '@tanstack/react-query'
-
 import { useAuth } from '../../../hooks/useAuth'
+
 import AuthService from '../../../services/auth.service'
 
 export const useAuthPage = () => {

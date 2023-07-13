@@ -3,24 +3,25 @@
 
 .alert {
 	width: 100%;
-	background-color: #5be7c4;
-	color: #252a34;
+	background-color: #00c853;
+	color: $black;
 	margin-bottom: 1rem;
 	animation: opacity 0.4s;
 	padding: 10px;
 	border-radius: 10px;
 
 	&.error {
-		background-color: #ff2e63;
+		background-color: #ff1744;
 		color: $white;
 	}
 
 	&.info {
-		background-color: #50c1e9;
+		background-color: #ffffff;
+		color: $black;
 	}
 
 	&.warning {
-		background-color: #f75940;
-		color: $white;
+		background-color: #ffd600;
+		color: $black;
 	}
 }

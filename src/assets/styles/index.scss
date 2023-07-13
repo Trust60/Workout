@@ -6,12 +6,14 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 	&:before,
 	&:after {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
 	&:focus {
 		outline: none;
 	}
@@ -92,20 +94,21 @@ img {
 	margin: 0 auto;
 }
 
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
+/* Firefox */
 input[type='number'] {
 	-moz-appearance: textfield;
 }
 
 .error {
-	color: #8d2b3d;
+	color: #c20d2e;
 	font-size: 1rem;
-	margin-bottom: 1rem;
 }
 
 .select2-selection {
@@ -135,7 +138,7 @@ input[type='number'] {
 		}
 
 		&-notice {
-			color: #946e86 !important;
+			color: #1c6b62 !important;
 		}
 	}
 
@@ -154,7 +157,7 @@ input[type='number'] {
 	}
 
 	&__placeholder {
-		color: #946e86 !important;
+		color: #1c6b62 !important;
 		margin-left: 6px !important;
 		text-align: left;
 	}
@@ -172,7 +175,7 @@ input[type='number'] {
 		}
 
 		&__remove:hover {
-			background-color: #8b2557 !important;
+			background-color: #1c6b62 !important;
 			color: $white !important;
 		}
 	}

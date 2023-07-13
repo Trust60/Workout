@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 import { $axios } from '../api'
 import { TOKEN } from '../app.constants'
 
-export const AuthService = {
+class AuthService {
 	async main(email, password, type) {
 		try {
 			const { data } = await $axios.post(`/auth/${type}`, {
@@ -20,4 +20,4 @@ export const AuthService = {
 	}
 }
 
-export default AuthService
+export default new AuthService()

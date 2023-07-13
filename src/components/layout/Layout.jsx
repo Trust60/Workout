@@ -1,10 +1,13 @@
 import cn from 'clsx'
-import PropTypes from 'prop-types'
+
+import { useCheckToken } from '../../hooks/useCheckToken'
 
 import styles from './Layout.module.scss'
 import Header from './header/Header'
 
 const Layout = ({ children, bgImage, heading = '', backLink = '/' }) => {
+	useCheckToken()
+
 	return (
 		<section
 			className={cn(styles.wrapper, {
@@ -13,12 +16,12 @@ const Layout = ({ children, bgImage, heading = '', backLink = '/' }) => {
 			style={{ backgroundImage: `url(${bgImage})` }}
 		>
 			<Header backLink={backLink} />
+
 			{heading && <h1 className={styles.heading}>{heading}</h1>}
+
 			{children && <div>{children}</div>}
 		</section>
 	)
 }
-Layout.propTypes = {
-	children: PropTypes.node.isRequired
-}
+
 export default Layout

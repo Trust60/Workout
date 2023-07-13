@@ -1,6 +1,6 @@
 import { $axios } from '../../api'
 
-const WORKOUTS = '/workouts'
+export const WORKOUTS = '/workouts'
 
 class WorkoutService {
 	async getAll() {
@@ -8,14 +8,15 @@ class WorkoutService {
 	}
 
 	async getById(id) {
-		return $axios.put(`${WORKOUTS}/${id}`)
+		return $axios.get(`${WORKOUTS}/${id}`)
 	}
 
+	// name, exerciseIds
 	async create(body) {
 		return $axios.post(WORKOUTS, body)
 	}
 
-	async update(body, id) {
+	async update(id, body) {
 		return $axios.put(`${WORKOUTS}/${id}`, body)
 	}
 
@@ -23,4 +24,5 @@ class WorkoutService {
 		return $axios.delete(`${WORKOUTS}/${id}`)
 	}
 }
+
 export default new WorkoutService()
