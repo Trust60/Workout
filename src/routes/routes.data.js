@@ -47,5 +47,10 @@ export const routes = [
 		path: '/exercise/:id',
 		component: ExerciseLog,
 		isAuth: true
+	},
+	{
+		path: '*',
+		component: Home,
+		isAuth: true
 	}
 ]
